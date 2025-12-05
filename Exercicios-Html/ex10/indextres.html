@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: aquamarine;
+        }
+
+        .especial{
+            background-color: rgb(214, 61, 61);
+            color: blue;
+        }
+
+        .especial::before {
+            content: '->';
+        }
+
+        .especial::after {
+            content: '<-';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://youtube.com" target="_blank">YOUTUBEZAO</a></li>
+        <li><a href="https://netflix.com" target="_blank" class="especial">NETFLIXONA</a></li>
+        <li><a href="https://amazon.com" target="_blank">AMAZONZONA</a></li>
+    </ul>
+</body>
+</html>
