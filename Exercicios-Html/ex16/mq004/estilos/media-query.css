@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* typical device breakpoints
+    celular:600px
+    tablet:600px a 768px
+    tablets grandes: 768 a 992
+    desktop:1200px
+    desktop grande: acima de 1200px
+*/
+
+
+@media print {
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+    #phone{ display: none;}
+    #tablet{ display: none;}
+    #print{ display: block;}
+    #tv{ display: none;}
+    #pc{ display: none;}
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+        #phone{ display: none;}
+        #tablet{ display: block;}
+        #print{ display: none;}
+        #tv{ display: none;}
+        #pc{ display: none;}
+    
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+     body {
+        background-image: url(../imagens/back-pc.jpg);
+     }
+        #phone{ display: none;}
+        #tablet{ display: none;}
+        #print{ display: none;}
+        #tv{ display: none;}
+        #pc{ display: block;}
+    
+}
+
+@media screen and (min-width:1200px) {
+     body {
+        background-image: url(../imagens/back-tv.jpg);
+     }
+        #phone{ display: none;}
+        #tablet{ display: none;}
+        #print{ display: none;}
+        #tv{ display: block;}
+        #pc{ display: none;}
+
+    main {
+        width: 700px;
+    }
+}
