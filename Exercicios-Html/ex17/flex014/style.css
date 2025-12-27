@@ -19,7 +19,8 @@ p {
 
 h1,h2 {
     margin-bottom: 20px;
-    text-align: center;
+    line-height: 1.2em;
+    text-align: left;
 }
 
 .normal {
